@@ -1,0 +1,3077 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_padrao"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableEspacoSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <ImageButton
+            android:id="@+id/btnImgSairForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_grande" />
+
+        <TextView
+            android:id="@+id/tvQuadra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   " />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableEspacoInferior"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableBtns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnSalvarFormulario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:width="200dp" />
+
+            <ImageButton
+                android:id="@+id/imageErrosValidacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/warning32" />
+
+            <TextView
+                android:id="@+id/txtEspaco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000000"
+                android:width="170dp" />
+
+            <ImageButton
+                android:id="@+id/imageTirarFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:id="@+id/txtNumeroFotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#000000" />
+        </TableRow>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtTitulo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOCALIZAÇÃO DO IMÓVEL"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                  <TableRow
+				        android:id="@+id/tableRowlocalizacaoImovel01"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" 
+				        android:padding="12dp">
+				
+				           <CheckBox
+						        android:id="@+id/altColetiva"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:textColor="#000000"
+						        android:text="Alteração Coletiva" />
+				           
+				          				        
+				    </TableRow>
+                
+                
+                
+                
+                
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtInscricao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inscrição "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etInscricao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="11"
+                        android:inputType="number"
+                        android:maxLength="21" >
+
+                        <requestFocus />
+                    </EditText>
+                </TableRow>
+
+               
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtLogradouro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logradouro"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etLogradouro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" />
+
+                    <ImageButton
+                        android:id="@+id/btnImgPesquisarLogr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/find" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtNumero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nº"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etNumero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="5" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCdLogr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Código"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etCdLogr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtSecao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seção"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etSecao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="6" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtComplemento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Complemento"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etComplemento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="20" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtBairro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bairro"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etBairro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:maxLength="25" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/btnImgPesquisarBairro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/find" />
+                </TableRow>
+
+              
+         			    <TableRow
+				        android:id="@+id/tableLocalizacaoImovel880"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtLoteamento"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Loteamento" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etLoteamento"
+				       	    android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10">
+					    </EditText>
+				        <!-- <ImageButton
+				            android:id="@+id/btnImgPesquisarLoteamento"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:src="@drawable/find" /> -->
+				        
+				    </TableRow>
+
+            
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtQuadra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loteamento Quadra"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etQuadra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="10" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtLote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loteamento Lote"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etLote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="15" >
+                    </EditText>
+                </TableRow>
+
+                
+                <TableRow
+                    android:id="@+id/tableLocalizacaoImovel11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtAptoGaragem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apto/Garagem"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etAptoGaragem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="20" >
+                    </EditText>
+                </TableRow>
+                
+                 <TableRow
+                    android:id="@+id/tableLocalizacaoImovel12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtBloco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bloco"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etBloco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="15" >
+                    </EditText>
+                </TableRow>
+               
+                 
+                   <TableRow
+                    android:id="@+id/tableLocalizacaoImovel13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtEdificio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edifício"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etEdificio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="29" >
+                    </EditText>
+                </TableRow>
+                
+                  <TableRow
+                    android:id="@+id/tableLocalizacaoImovel14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtEndCorrespondencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End. Correspondência"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                  <CheckBox
+					        android:id="@+id/cbEndCorrespondencia"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					         />
+                </TableRow>
+                
+                   
+                   
+                
+                <TableRow
+                    android:id="@+id/tableEspacoInferior2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" >
+
+                    <TextView
+                        android:id="@+id/txt000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txt111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </TableRow>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/tableDadosProprietario0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/txtTitulo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DADOS DO PROPRIETÁRIO "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <ImageButton
+                            android:id="@+id/btnImgEditPessoa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/edit" />
+
+                        <ImageButton
+                            android:id="@+id/btnImgPesquisarPessoa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/find" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableRow
+                    android:id="@+id/tableEspacoInferiorAbaixoProp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" >
+
+                    <TextView
+                        android:id="@+id/txt222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txt333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaNome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nome"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaNome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaCpf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CPF"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaCpf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableDadosProprietario3"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtCdContribuinte"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Cd Contribuinte" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etCdContribuinte"   
+				       		android:enabled="false"
+				       		android:editable="false"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" >
+					    </EditText>
+				    </TableRow>
+
+                -->
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaEndereco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Endereço"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaEndereco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaComplemento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Complemento   "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaComplemento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaBairro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bairro"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaBairro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario404"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaTelefone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telefone"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaTelefone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaCep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CEP"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaCep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaCidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cidade"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaCidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableDadosProprietario9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPessoaUf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UF"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etPessoaUf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                
+                <TableRow
+                    android:id="@+id/tableDadosProprietario10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCdImobiliaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cód. Imobiliária"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etCdImobiliaria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10" >
+                    </EditText>
+                </TableRow>
+                
+                <!--
+                    <TableRow
+				        android:id="@+id/tableDadosProprietario909"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtPessoaCoProprietario"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Coproprietario" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etPessoaCoProprietario"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+					    </EditText>
+				    </TableRow>
+                -->
+
+                <TableRow
+                    android:id="@+id/tableEspacoInferior3"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" >
+
+                    <TableRow
+                        android:id="@+id/tableEspacoInferior3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableRow>
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txtTitulo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMAÇÕES GERAIS SOBRE O IMÓVEL"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                   <TableRow
+                    android:id="@+id/tableInfoGeraisImovel0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtOcupacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ocupação"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spOcupacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                   
+                
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtMurado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Murado"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spMurado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPatrimonio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Patrimônio"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spPatrimonio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                   <TableRow
+                    android:id="@+id/tableInfoGeraisImovel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtMarinha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terreno de Marinha"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spMarinha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                
+                                
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtUtilizacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Utilização"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spUtilizacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+       
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPasseio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passeio"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spPasseio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtArvore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Árvore"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spArvore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        />
+                </TableRow>
+                
+                
+                
+                 <TableRow
+                    android:id="@+id/tableInfoGeraisImovel7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtRedeAgua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rede Pública Água"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spRedeAgua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtElevador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Elevador"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spElevador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                
+               
+                
+                
+                
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtEsgoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Esgoto"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spEsgoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtEletricidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eletricidade"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spEletricidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtIsentoIptu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Imune/Isento IPTU"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spIsentoIptu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoGeraisImovel11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtIsentoTsu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Isento TSU"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spIsentoTsu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                
+                 <TableRow
+				        android:id="@+id/tableInfoGeraisImovel12"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtNumPavimentos"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Nº de Pavimentos" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etNumPavimentos"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="number"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow>
+				    
+                 
+                  <TableRow
+				        android:id="@+id/tableInfoGeraisImovel13"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtNumCelesc"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Med. CELESC" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etNumCelesc"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow>
+				    
+                  
+                   <TableRow
+				        android:id="@+id/tableInfoGeraisImovel14"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtNumCasan"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Med. CASAN"
+				             android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etNumCasan"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow>
+				    
+                   
+                     <TableRow
+				        android:id="@+id/tableInfoGeraisImovel15"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtCartMatricul"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Cartório Matrícula"
+				             android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etCartMatricula"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow>
+				    
+                     
+                      <TableRow
+				        android:id="@+id/tableInfoGeraisImovel16"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtCartLivro"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Cartório Livro"
+				             android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etCartLivro"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow>
+                 
+                      
+                     <TableRow
+				        android:id="@+id/tableInfoGeraisImovel17"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtCartFolha"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Cartório Folha"
+				             android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etCartFolha"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow>
+				    
+                     <TableRow
+				        android:id="@+id/tableInfoGeraisImovel18"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtCartCodigo"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Cartório Código"
+				             android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etCartCodigo"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow>
+				    
+                   
+                    <TableRow
+				        android:id="@+id/tableInfoGeraisImovel19"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtValorVenal"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Valor Venal Declarado"
+				             android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etValorVenal"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text"
+				            android:maxLength="10">
+					    </EditText>
+				    </TableRow> 
+				    
+                    
+                    
+            
+                 
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableInfoGeraisImovel7"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtLancEnglobado"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Lanç. Englobado"
+		                	android:textAppearance="?android:attr/textAppearanceSmall"
+				            android:textColor="#000000" />
+				
+				        <Spinner
+				            android:id="@+id/spLancEnglobado"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content" />
+				    </TableRow>
+                -->
+
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableInfoGeraisImovel8"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtNumCadEnglobado"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Nº Cadastro Englobado" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etNumCadEnglobado"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="number">
+					    </EditText>
+				    </TableRow>
+                -->
+
+
+              
+             
+
+                <TableRow
+                    android:id="@+id/tableEspacoInferior4"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" >
+
+                    <TableRow
+                        android:id="@+id/tableEspacoInferior4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableRow>
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txtTitulo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMAÇÕES SOBRE O TERRENO"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+               <!--  <TableRow
+                    android:id="@+id/tableInfoTerreno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtAreaTerreno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Área do Terreno"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etAreaTerreno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                </TableRow> -->
+
+                <!--
+                    <TableRow
+				         android:id="@+id/tableInfoTerreno2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtAreaTributavel"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Área Tributável" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etAreaTributavel" 
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10"
+				            android:inputType="numberDecimal" >
+					    </EditText>
+				    </TableRow>
+                -->
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtAreaTotalConstruida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Área Total Construída  "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etAreaTotalConstruida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                </TableRow>
+
+               
+                    <TableRow
+				        android:id="@+id/tableInfoTerreno303"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtAreaTerreno"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Área Terreno" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etAreaTerreno"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="numberDecimal">
+					    </EditText>
+				    </TableRow>
+                
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtSitQuadra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sit. na Quadra"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spSitQuadra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtTopografia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Topografia"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spTopografia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtProfundidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profundidade"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etProfundidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPedologia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pedologia"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spPedologia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtTestada1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Testada 1"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etTestada1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:inputType="text" 
+                         android:maxLength="15">
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCodigo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Código 1"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etCodigo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtSecao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seção 1 "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etSecao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                         android:maxLength="6" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtLogradouro1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logradouro 1"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etLogradouro1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtTestada2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Testada 2"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etTestada2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                         android:maxLength="10" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCodigo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Código 2"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etCodigo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtSecao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seção 2 "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etSecao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text" 
+                         android:maxLength="6">
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtLogradouro2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logradouro 2"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etLogradouro2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/btnImgPesquisarLogr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/find" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtTestada3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Testada 3"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etTestada3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                         android:maxLength="10" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCodigo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Código 3"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etCodigo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtSecao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seção 3 "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etSecao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                         android:maxLength="6" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtLogradouro3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logradouro 3"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etLogradouro3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+
+                    <ImageButton
+                        android:id="@+id/btnImgPesquisarLogr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/find" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtTestada4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Testada 4"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etTestada4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:maxLength="10" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCodigo4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Código 4"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etCodigo4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtSecao4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seção 4 "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etSecao4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                         android:maxLength="6" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableInfoTerreno23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtLogradouro4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logradouro 4"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etLogradouro4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:ems="10"
+                        android:enabled="false" />
+
+                    <ImageButton
+                        android:id="@+id/btnImgPesquisarLogr4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/find" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableEspacoInferior5"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" >
+
+                    <TableRow
+                        android:id="@+id/tableEspacoInferior5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableRow>
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/txtTitulo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INFORMAÇÕES SOBRE A EDIFICAÇÃO"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <TableRow
+                    android:id="@+id/tableRowEdf1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtAnoConstrucao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ano Construção"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etAnoConstrucao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="4" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtNumeroPavimentosEdificacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Número Pavimentos Edificação"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etNumeroPavimentosEdificacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number" >
+                    </EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtAreaConstUnidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Área Construída da Unidade"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/etAreaConstUnidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtTipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipo"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spTipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtAlinhamento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alinhamento"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spAlinhamento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtLocacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Locação"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spLocacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtSituacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Situação"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spSituacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+                
+                
+                  <TableRow
+                    android:id="@+id/tableRowEdf32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtTipo_ocupacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ocupação"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spTp_ocupacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                
+
+                <TableRow
+                    android:id="@+id/tableRowEdf9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtEstrutura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estrutura"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spEstrutura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCobertura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cobertura"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spCobertura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtParedes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paredes"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spParedes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtVedacoesEsquadrias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vedações/Esquadrias"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spVedacoesEsquadrias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtRevExterno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Revestimento Externo"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spRevExterno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowEdf14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtPadraoConstrucao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Padrão da Construção"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <Spinner
+                        android:id="@+id/spPadraoConstrucao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+             
+                    <TableRow
+				        android:id="@+id/tableRowEdf15"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtAfastamentoFrontal"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Afastamento Frontal" 
+				            android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etAfastamentoFrontal"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="numberDecimal">
+					    </EditText>
+				    </TableRow>
+				    
+                    
+                     <TableRow
+				        android:id="@+id/tableRowEdf16"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <CheckBox
+					        android:id="@+id/cbClimatizacao"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					        android:text="Climatização" />
+				        
+				         <CheckBox
+					        android:id="@+id/cbEquipSeguranca"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					        android:text="Equip. Segurança" />
+				        
+				    </TableRow>
+				    
+				     <TableRow
+				        android:id="@+id/tableRowEdf17"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				 <CheckBox
+					        android:id="@+id/cbSalaoFestas"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					        android:text="Salão de Festas" />
+				 
+				  <CheckBox
+					        android:id="@+id/cbChurrasqueira"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					        android:text="Churrasqueira" />
+				       
+				        
+				    </TableRow>
+                    
+                      <TableRow
+				        android:id="@+id/tableRowEdf18"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+					
+                          	<CheckBox
+						        android:id="@+id/cbSauna"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:textColor="#000000"
+						        android:text="Sauna" />
+                          
+                          	<CheckBox
+						        android:id="@+id/cbPiscina"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:textColor="#000000"
+						        android:text="Piscina" />
+	                          
+				       
+				        
+				    </TableRow>
+				    
+                      <TableRow
+				        android:id="@+id/tableRowEdf19"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				           <CheckBox
+						        android:id="@+id/cbLareira"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:textColor="#000000"
+						        android:text="Lareira" />
+				           
+				           <CheckBox
+						        android:id="@+id/cbSalaoJogos"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:textColor="#000000"
+						        android:text="Salão de Jogos" />
+				        
+				    </TableRow>
+                    
+                    
+                    <TableRow
+				        android:id="@+id/tableRowEdf20"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				          <CheckBox
+						        android:id="@+id/cbSalaGinastica"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:textColor="#000000"
+						        android:text="Sala de Ginástica" />
+                        
+				          <CheckBox
+					        android:id="@+id/cbAquecedorGas"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					        android:text="Aquecedores Gás" />
+				          
+				          
+				    </TableRow>
+				    
+                    
+                    
+                     <TableRow
+				        android:id="@+id/tableRowEdf21"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				         <CheckBox
+						        android:id="@+id/cbElevServico"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:textColor="#000000"
+						        android:text="Elevador Serviço" />
+				         
+				         <CheckBox
+					        android:id="@+id/cbElevSocial"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textColor="#000000"
+					        android:text="Elevador Social" />
+				        
+				    </TableRow>
+                    
+      
+                    
+                    	 <TableRow
+				        android:id="@+id/tableRowEdf28"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				         <TextView
+				            android:id="@+id/txtNrGaragem"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Número Garagens"
+				            android:textColor="#000000"/>
+                    	     
+				
+				        <EditText
+				            android:id="@+id/etNuGaragem"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+					    </EditText>
+				    </TableRow>
+                    
+  				<!-- 	 <TableRow
+				        android:id="@+id/tableRowCadastrador"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtCadastrador"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Cadastrador" 
+				            android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etCadastrador"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+					    </EditText>
+				    </TableRow> -->
+		
+<!--     <TableRow
+				        android:id="@+id/tableDataCadastro"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtDataCadastro"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Data do Cadastro"         
+				            android:textColor="#000000"/>
+				
+					     <EditText
+					        android:id="@+id/etDataCadastro"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:ems="10"
+					        android:inputType="date" 
+					        />	 
+				    </TableRow> -->
+   		    
+    <TableRow
+				        android:id="@+id/tableObservacao"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtObservacao"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Observações"                                             
+				             android:textColor="#000000"/>
+				
+				       <EditText
+					        android:id="@+id/etObservacao"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:ems="10"
+					        android:inputType="textMultiLine" />
+				       
+				    </TableRow>
+                
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowEdf19"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtAlvaraConstrucao"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Alvará de Construção" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etAlvaraConstrucao"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+						</EditText>
+				    </TableRow>
+
+                -->
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowEdf20"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtApartamento"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Apartamento" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etApartamento"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+						</EditText>
+				    </TableRow>
+
+                -->
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowEdf21"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtBloco"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Bloco" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etBloco"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+						</EditText>
+				    </TableRow>
+                -->
+
+                <TableRow
+                    android:id="@+id/tableEspacoInferior6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp" >
+
+                    <TextView
+                        android:id="@+id/txtAdd222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtAdd333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </TableRow>
+
+               <!--  <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@+id/tableTitulo6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/txtTitulo6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INFORMAÇÕES SOBRE A EDIFICAÇÃO"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#000000" />
+
+                        <ImageButton
+                            android:id="@+id/btnImgAddEdificacao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus" />
+                    </TableRow>
+                </TableLayout> -->
+
+         <!--        <TableRow
+                    android:id="@+id/tableEspacoInferiorEdificacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" >
+
+                    <TextView
+                        android:id="@+id/txtAdd65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtAdd75"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </TableRow>
+ -->
+                <ListView
+                    android:id="@android:id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </ListView>
+
+               <!--  <TableRow
+                    android:id="@+id/tableEspacoInferior7"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" >
+
+                    <TextView
+                        android:id="@+id/txtAdd444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/txtAdd555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </TableRow> -->
+
+                <!--
+                    <TextView
+			            android:id="@+id/txtTitulo7"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="INFORMAÇÕES COMPLEMENTARES"
+			            android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#000000"/>
+			
+		
+				    <TableRow
+				        android:id="@+id/tableRowInfoCompl1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtNroEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Nº Escritura" 
+				            android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etNroEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+						</EditText>
+				
+				    </TableRow>
+                -->
+
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl2"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtFolhaEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Folha Escritura" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etFolhaEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+						</EditText>
+				    </TableRow>
+
+                -->
+                <!--
+                         <TableRow
+				        android:id="@+id/tableRowInfoCompl3"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtLivroEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Livro Escritura" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etLivroEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+						</EditText>
+				    </TableRow>
+                -->
+
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl4"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+		
+				        <TextView
+				            android:id="@+id/txtDataEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Data Escritura" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etDataEscritura"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="date">
+						</EditText>
+				    </TableRow>
+                -->
+
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl8"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtNroHabitese"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Nº Habite-se" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etNroHabitese"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+						</EditText>
+				
+				    </TableRow>
+
+                -->
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl9"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtAnoHabitese"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Ano Habite-se" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etAnoHabitese"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="number">
+						</EditText>
+				
+				    </TableRow>
+                -->
+
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl10"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >		        
+		
+				        <TextView
+				            android:id="@+id/txtDataHabitese"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Data Habite-se" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etDataHabitese"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="date">
+				        </EditText>
+				
+				    </TableRow>
+                -->
+
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl11"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtNroHidrometro"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Nº Hidrômetro" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etNroHidrometro"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+				        </EditText>
+				
+				    </TableRow>
+                -->
+
+
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl12"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtCadastrador"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Cadastrador" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etCadastrador"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:ems="10" 
+				            android:inputType="text">
+				        </EditText>
+				
+				    </TableRow>
+                -->
+
+
+                <!--
+                         <TableRow
+				        android:id="@+id/tableRowInfoCompl13"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtDataCadastro"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Data Cadastro" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etDataCadastro"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+		                	android:ems="10" 
+				            android:inputType="date">
+		            </EditText>
+				
+				    </TableRow>
+                -->
+
+
+                <!--
+                         <TableRow
+				        android:id="@+id/tableRowInfoCompl15"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtAverbacao"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Averbação" android:textColor="#000000"/>
+				
+				        <EditText
+				            android:id="@+id/etAverbacao"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:ems="10" 
+				        android:inputType="textMultiLine">
+				    	</EditText>
+				
+				    </TableRow> 
+
+                -->
+                <!--
+                    <TableRow
+				        android:id="@+id/tableRowInfoCompl14"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content" >
+				
+				        <TextView
+				            android:id="@+id/txtObservacoes"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Observações" android:textColor="#000000"/>
+				
+				        <EditText
+				        android:id="@+id/etObservacoes"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:ems="10" 
+				        android:inputType="textMultiLine">
+				    	</EditText>
+				
+				    </TableRow>
+                -->
+
+            </TableLayout>
+
+            <TableRow
+                android:id="@+id/tableInsisiveis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/etIdLogra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etCdBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdLoteamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+                
+                
+                 <EditText
+                    android:id="@+id/etCod_logrPessoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etCdBairroPessoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdPessoa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdLogra1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdLogra2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdLogra3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdLogra4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etArrayEdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdDadosEdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etMslinkEdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etSrcImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etControleWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etValida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etIdBci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+                 <EditText
+                    android:id="@+id/etNu_insc_imbl_ant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etRecnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableEspacoInferiorFinal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:id="@+id/txtFinal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtFinal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnExcluirBci"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/red_menu_btn"
+                    android:text="Apagar Imóvel"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableEspacoInferior8"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow88"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

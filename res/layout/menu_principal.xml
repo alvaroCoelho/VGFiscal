@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_padrao"
+    android:orientation="vertical" >
+
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:gravity="center_horizontal">
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+        
+        <ImageButton
+            android:id="@+id/btnImgSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_grande" />
+
+
+
+        <TextView
+            android:id="@+id/tvQuadra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   " />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/ibtnEnviarFotos"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/enviar" />
+
+        
+            <Button
+            android:id="@+id/btnGerenciarQuadras"
+             android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:text="Gerenciar Quadras" />
+
+            <Button
+                android:id="@+id/btnDescarregar"
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:text="Sincronizar" />
+        
+        <Button
+            android:id="@+id/btnInserirImovel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+            android:text="Inserir Imóvel" />
+
+    
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/labelPesquisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesquise para editar um Imóvel" android:textColor="#000000"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/etPesquisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+			android:inputType="text">
+
+            <requestFocus />
+        </EditText>
+		        
+
+		<TableRow
+		    android:id="@+id/tableRow4"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center" >
+
+			<Button
+			    android:id="@+id/btnProcurar"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Procurar" />
+        
+    	</TableRow>
+    	
+		
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/txtPesquisarPorImovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar por: Quadra, Inscrição ou Contribuinte"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textSize="@dimen/muitoPequena"
+        android:textColor="#000000"/>
+
+    <ListView android:id="@android:id/list" android:layout_height="wrap_content"
+	        android:layout_width="match_parent"></ListView>
+
+</LinearLayout>

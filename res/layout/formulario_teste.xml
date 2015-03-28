@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_padrao"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableEspacoSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" >
+
+        <ImageButton
+            android:id="@+id/btnImgSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_grande" />
+
+      
+    </TableRow>
+
+   
+      
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtcadastro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastro de Bairro "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etnomeBairro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSalvarBairro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:width="200dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Teste" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="CheckedTextView" />
+
+    
+
+</LinearLayout>
